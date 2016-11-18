@@ -15,6 +15,8 @@ RUN apt-key add dotdeb.gpg
 RUN apt-get update 
 RUN apt-get install -y php7.0-fpm php7.0-mysql php7.0-cli php7.0-phalcon
 
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
 RUN apt-get clean
 
 ENV MYSQL_DATABASE myapp
