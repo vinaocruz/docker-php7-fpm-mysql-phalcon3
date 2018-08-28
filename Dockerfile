@@ -1,5 +1,4 @@
 FROM mysql
-MAINTAINER Vinicius Cruz <vinaocruz@gmail.com>
 
 RUN echo deb http://packages.dotdeb.org jessie all >>  /etc/apt/sources.list
 RUN echo deb-src http://packages.dotdeb.org jessie all >>  /etc/apt/sources.list
